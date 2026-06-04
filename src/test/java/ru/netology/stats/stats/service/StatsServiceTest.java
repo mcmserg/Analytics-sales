@@ -14,7 +14,7 @@ public class StatsServiceTest {
         long actual = service.sum(sales);
         Assertions.assertEquals(expected, actual);
         System.out.println("Сумма всех продаж");
-        System.out.println("Ожидание "+ expected + " Актуальность " + actual);
+        System.out.println("Ожидание " + expected + " Актуальность " + actual);
 
 //        System.out.println("Кол-во ячеек в массиве " + sales.length);
 //        long cells = sales.length;
@@ -25,13 +25,13 @@ public class StatsServiceTest {
     }
 
     @Test
-    void  testAverage() {
+    void testAverage() {
         StatsService service = new StatsService();
         double expected = 15;
         double actual = service.average(sales);
         Assertions.assertEquals(expected, actual);
         System.out.println("Средняя сумма продаж");
-        System.out.println("Ожидание "+ expected + " Актуальность " + actual);
+        System.out.println("Ожидание " + expected + " Актуальность " + actual);
 
     }
 
@@ -47,7 +47,7 @@ public class StatsServiceTest {
 
 
     @Test
-    void  testMinSales() {
+    void testMinSales() {
         StatsService service = new StatsService();
         long expected = 9;
         long actual = service.minSales(sales);
@@ -76,7 +76,6 @@ public class StatsServiceTest {
         System.out.println("кол-во месяцев, в которых продажи были выше среднего");
         System.out.println("Ожидание " + expected + ", Актуальность " + actual);
     }
-
 
 
 }
